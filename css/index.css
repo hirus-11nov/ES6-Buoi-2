@@ -1,63 +1,108 @@
 /* GLOBAL */
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #f1f1f1;
-    
+
 }
 
 /* MAIN CSS */
-.vglasses__left{
+.vglasses__left {
     background-color: white;
     padding: 20px 40px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.vglasses__left .col-4{
+
+.vglasses__left .col-4 {
     align-self: center;
 }
-.vglasses__items{
+
+.vglasses__items {
     cursor: pointer;
 }
 
-.vglasses__right{
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+.vglasses__right {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.vglasses__model{
-    background-image: url('../img/model.jpg');
+.vglasses__model {
+    background-image: url('../img/model-lisa-1.jpg');
     background-position: center top;
     background-size: cover;
     height: 600px;
-    
+
 }
 
-.vglasses__model img{
+.vglasses__model img {
     position: absolute;
-    top: 32%;
-    left: 25%;
-    width: 238px;
-    height: 85px;
+    top: 37%;
+    left: 13%;
+    width: 315px;
+    height: 120px;
     opacity: 0.9;
 }
 
-.vglasses__card{
+.vglasses__model img#virGlass-G10,
+.vglasses__model img#virGlass-G11,
+.vglasses__model img#virGlass-G12 {
+    position: absolute;
+    top: 36%;
+    left: 1%;
+    width: 425px;
+    height: 140px;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 412px) {
+    .vglasses__model img {
+        top: 36%;
+        left: 6%;
+    }
+
+    .vglasses__model img#virGlass-G10,
+    .vglasses__model img#virGlass-G11,
+    .vglasses__model img#virGlass-G12 {
+        left: -9%;
+    }
+}
+
+.vglasses__card {
     position: relative;
     overflow: hidden;
     background-color: white;
 }
 
-.vglasses__info{
+.vglasses__info {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     color: white;
     padding: 20px;
-   display: none;
+    display: none;
 }
 
-#glasses{
+.vglasses__price {
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.vglasses__stock {
+    color: green;
+}
+
+.vglasses__desc {
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+#glasses {
     transition: all 0.5s;
 }
