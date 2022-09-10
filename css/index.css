@@ -58,13 +58,13 @@ body {
 @media only screen and (max-width: 420px) {
     .vglasses__model img {
         top: 36%;
-        left: 8%;
+        left: 6%;
     }
 
     .vglasses__model img#virGlass-G10,
     .vglasses__model img#virGlass-G11,
     .vglasses__model img#virGlass-G12 {
-        left: -6%;
+        left: -8%;
     }
 }
 
